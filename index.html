@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English Dream - 온라인 전문 영어회화</title>
+    <meta name="description" content="파스텔 톤의 세련된 환경에서 즐기는 온라인 전문 영어회화 서비스, 영어드림(English Dream)입니다. 무료 상담을 예약하고 꿈꾸던 영어를 시작해보세요.">
+    <!-- Google Fonts: Pretendard -->
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header id="header">
+        <div class="nav-container">
+            <a href="#home" class="logo"><img src="images/logo.png" alt="English Dream Logo" style="height: 90px; width: auto; object-fit: contain;"></a>
+            <nav aria-label="주요 메뉴">
+                <ul class="nav-links" id="primary-navigation">
+                    <li><a href="#home">홈</a></li>
+                    <li><a href="#features">영어드림 특징</a></li>
+                    <li><a href="#curriculum">커리큘럼</a></li>
+                    <li><a href="#b2b">기업교육</a></li>
+                    <li><a href="#policy">수강규정</a></li>
+                    <li><a href="#reservation" class="nav-btn">상담예약</a></li>
+                </ul>
+            </nav>
+            <button class="hamburger" type="button" aria-label="메뉴 열기" aria-controls="primary-navigation" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content fade-in" style="display: flex; align-items: center; justify-content: space-between; gap: 80px; text-align: left;">
+            <div class="hero-text">
+                <span class="badge">동시 수강생 2000+ | 재수강률 87.3%</span>
+                <h1 style="font-size: 3.2rem;">아직도 영어회화 어떻게<br>시작해야할지 막막하신가요?</h1>
+                <p><span class="highlight" style="font-size: 1.6rem; font-weight: 700;">영어드림에서 1:1 맞춤 PT를 시작하세요</span></p>
+                <div class="hero-buttons" style="margin-top: 30px; justify-content: flex-start;">
+                    <a href="#reservation" class="btn btn-primary">1:1 맞춤 PT 상담하기</a>
+                    <a href="#features" class="btn btn-secondary">특징 자세히 보기</a>
+                </div>
+            </div>
+            <div class="hero-images" style="display: flex; flex-direction: column; gap: 20px; align-items: flex-end;">
+                <img src="images/hero_main.png" alt="영어회화 수업" style="width: 100%; max-width: 500px; mix-blend-mode: multiply;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Why English Dream Section -->
+    <section id="features" class="section bg-light">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>왜 영어회화는 영어드림에서 시작할까요?</h2>
+                <p>수강생의 100% 실력 향상을 위해 만들어진 영어드림만의 특별한 시스템</p>
+            </div>
+            <div class="features-flex">
+                <div class="feature-item fade-in">
+                    <img src="images/man.gif" alt="원어민 강사와 수강생이 온라인 수업하는 모습" class="feature-image">
+                    <div class="feature-text">
+                        <h3><span>01</span> 검증된 원어민 선생님</h3>
+                        <p>영어드림의 모든 원어민 선생님은 철저한 기준으로 선발됩니다.<br>단순한 화상영어가 아니라 실력향상에 초점을 둔 <strong>관리형 영어 학습 시스템</strong>입니다.</p>
+                    </div>
+                </div>
+                <div class="feature-item feature-item-curriculum fade-in" style="transition-delay: 0.1s;">
+                    <div class="course-slider" aria-label="맞춤 커리큘럼 과정">
+                        <div class="course-track">
+                            <article class="course-card is-active">
+                                <img src="images/course-daily.png" alt="일상 회화 수업 장면">
+                                <div class="course-card-body">
+                                    <span>01</span>
+                                    <h4>일상 회화 과정</h4>
+                                    <p>문장을 외우는 수업이 아니라, 생활 속에서 자연스럽게 반응하고 표현하는 힘을 기릅니다.</p>
+                                </div>
+                            </article>
+                            <article class="course-card">
+                                <img src="images/course-business.png" alt="비즈니스 영어 수업 장면">
+                                <div class="course-card-body">
+                                    <span>02</span>
+                                    <h4>비즈니스 과정</h4>
+                                    <p>회의, 이메일, 발표, 협상까지 실제 업무 상황에 바로 쓰는 표현을 훈련합니다.</p>
+                                </div>
+                            </article>
+                            <article class="course-card">
+                                <img src="images/course-travel.png" alt="여행지 풍경">
+                                <div class="course-card-body">
+                                    <span>03</span>
+                                    <h4>여행 영어 과정</h4>
+                                    <p>낯선 해외 상황에서도 당황하지 않고 자신 있게 말할 수 있는 실전 영어를 만듭니다.</p>
+                                </div>
+                            </article>
+                            <article class="course-card">
+                                <img src="images/course-interview.png" alt="영어 인터뷰 장면">
+                                <div class="course-card-body">
+                                    <span>04</span>
+                                    <h4>인터뷰 / 해외취업</h4>
+                                    <p>답변을 구조화하고 핵심을 분명히 전달하는 글로벌 채용 대응력을 키웁니다.</p>
+                                </div>
+                            </article>
+                            <article class="course-card">
+                                <img src="images/course-test.png" alt="영어 시험 대비 학습 장면">
+                                <div class="course-card-body">
+                                    <span>05</span>
+                                    <h4>영어시험 대비 회화</h4>
+                                    <p>OPIc, TOEIC Speaking 목표 점수에 맞춰 실전 모의 테스트와 약점 보완을 진행합니다.</p>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="course-controls">
+                            <button class="course-nav course-prev" type="button" aria-label="이전 과정">‹</button>
+                            <div class="course-dots" aria-label="과정 선택">
+                                <button class="is-active" type="button" aria-label="일상 회화 과정 보기"></button>
+                                <button type="button" aria-label="비즈니스 과정 보기"></button>
+                                <button type="button" aria-label="여행 영어 과정 보기"></button>
+                                <button type="button" aria-label="인터뷰 해외취업 과정 보기"></button>
+                                <button type="button" aria-label="영어시험 대비 회화 보기"></button>
+                            </div>
+                            <button class="course-nav course-next" type="button" aria-label="다음 과정">›</button>
+                        </div>
+                    </div>
+                    <div class="feature-text">
+                        <h3><span>02</span> 20가지 이상 맞춤 커리큘럼!</h3>
+                        <p>직무, 레벨, 목표에 따라 가장 잘 맞는 과정으로 세밀하게 설계합니다.</p>
+                    </div>
+                </div>
+                <div class="feature-item feature-item-diagnosis fade-in" style="transition-delay: 0.2s;">
+                    <div class="diagnosis-gallery" aria-label="레벨 테스트 결과 예시">
+                        <figure class="diagnosis-shot diagnosis-shot-chart">
+                            <img src="images/level-test-chart.png" alt="레벨 테스트 종합평가 차트">
+                        </figure>
+                        <figure class="diagnosis-shot diagnosis-shot-report">
+                            <img src="images/area-diagnosis.png" alt="말하기, 문법, 듣기, 발음, 어휘력 영역별 진단표">
+                        </figure>
+                    </div>
+                    <div class="feature-text">
+                        <h3><span>03</span> 왕초보부터 원어민 수준까지</h3>
+                        <p>영어드림의 레벨 테스트는 단순히 "초급 중급 고급"으로 나누는 평가가 아닙니다.<br>학습자의 현재 실력을 다각도로 분석하여 가장 효율적인 학습 방향을 설계하는 과정입니다.</p>
+                        <p style="margin-top: 15px; font-weight: 600; color: #7CA1B4; background: #E8F4F8; display: inline-block; padding: 5px 15px; border-radius: 20px;">말하기, 문법, 듣기, 발음, 어휘력 — 4가지 영역 상세 분석</p>
+                    </div>
+                </div>
+                <div class="feature-item feature-item-live fade-in" style="transition-delay: 0.3s;">
+                    <div class="live-class-gallery" aria-label="실제 원어민 수업 화면">
+                        <figure class="live-class-shot">
+                            <img src="images/live-class-1.png" alt="원어민과 학생이 화상 수업을 진행하는 실제 화면">
+                        </figure>
+                        <figure class="live-class-shot">
+                            <img src="images/live-class-2.png" alt="교재 화면을 보며 원어민 수업을 진행하는 실제 화면">
+                        </figure>
+                    </div>
+                    <div class="feature-text">
+                        <h3><span>04</span> 실시간 일대일 원어민 수업</h3>
+                        <p>영어드림의 실시간 1:1 원어민 수업은 학습자의 수준과 목표에 맞춰 진행되는 완전 맞춤형 수업 시스템입니다.</p>
+                        <ul class="feature-points">
+                            <li>교재 화면과 화상 수업을 함께 보며 진행</li>
+                            <li>학생 반응에 맞춘 즉각적인 피드백</li>
+                            <li>말하기 비중을 높인 실전형 수업 흐름</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="feature-item fade-in" style="transition-delay: 0.4s;">
+                    <img src="images/study-plan.png" alt="주간 학습 계획표 예시" class="feature-image feature-image-ui">
+                    <div class="feature-text">
+                        <h3><span>05</span> 관리형 학습 시스템</h3>
+                        <p>영어실력이 늘지 않는 가장 큰 이유는 '의지 부족'이 아니라 지속되지 않는 학습구조 때문입니다.<br>영어드림은 수업만 제공하는 방식이 아니라, 학습 전 과정을 관리하는 체계적인 관리형 시스템으로 운영됩니다.</p>
+                        <p style="margin-top: 10px;">담당 관리 선생님이 학생 수업을 직접 모니터링한 뒤 부족한 부분을 분석하여 맞춤 학습 계획표와 데일리 과제를 제공합니다.</p>
+                        <p style="margin-top: 10px; font-weight: 600; color: var(--primary);">매일 영어를 접할 수 있도록 관리하여 수업 외 시간까지 영어 노출을 자연스럽게 늘려주는 관리형 PT 시스템입니다.</p>
+                    </div>
+                </div>
+                <div class="feature-item fade-in" style="transition-delay: 0.5s;">
+                    <img src="images/daily-envoim.png" alt="데일리 영어 과제 화면 예시" class="feature-image feature-image-ui feature-image-daily">
+                    <div class="feature-text">
+                        <h3><span>06</span> 수업 외 시간 극대화! Booster!</h3>
+                        <p>영어드림은 수업 외 시간에도 멈추지 않는 자연스러운 영어 노출 환경을 설계합니다.<br>재미있고 주도적인 스피킹 과제, 정밀 피드백 쉐도잉 미션을 통해 일상 속에서 영어 습득 속도를 극대화시키는 강력한 부스터 효과를 경험해보세요.</p>
+                        <ul class="feature-points">
+                            <li>짧게 반복하는 데일리 표현 학습</li>
+                            <li>듣기와 말하기를 잇는 쉐도잉 과제</li>
+                            <li>수업 밖에서도 이어지는 영어 노출</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Cost Comparison Section -->
+    <section id="cost-efficiency" class="section" style="background: linear-gradient(180deg, #fafbfd 0%, #ffffff 100%); padding: 100px 0; border-top: 1px solid #f0f3f6; border-bottom: 1px solid #f0f3f6;">
+        <div class="container">
+            <div class="section-header text-center fade-in" style="margin-bottom: 60px; text-align: center;">
+                <span class="badge" style="background: var(--secondary); color: white; padding: 6px 18px; border-radius: 20px; font-size: 0.95rem; font-weight: 800; margin-bottom: 20px; display: inline-block; letter-spacing: 0.5px;">COST EFFICIENCY</span>
+                <h2 style="font-size: 3.2rem; font-weight: 900; color: #111; letter-spacing: -1.5px; line-height: 1.25; margin-bottom: 20px;">영어회화 실력,<br>꼭 어학연수를 가야만 늘까요?</h2>
+                <p style="font-size: 1.3rem; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.7;">해외 어학연수의 압도적인 노출 효과는 그대로 가져오고,<br>막대한 비용 부담은 획기적으로 낮췄습니다.</p>
+            </div>
+            
+            <div class="comparison-grid fade-in">
+                <!-- Left: Study Abroad -->
+                <div class="comparison-card study-abroad">
+                    <div class="card-header">
+                        <h3>일반 해외 어학연수</h3>
+                        <p style="margin-top: 5px;">미국 / 캐나다 / 영국 평균 비용</p>
+                    </div>
+                    <div class="price-box">
+                        <span class="price-label">월 평균 비용</span>
+                        <span class="price-value" style="text-decoration: line-through; color: #888;">300 ~ 580 <span class="unit">만원</span></span>
+                    </div>
+                    <ul class="compare-details">
+                        <li>학비 + 비싼 달러 체재비 + 왕복 항공료 부담</li>
+                        <li>방과 후 주로 한국인 유학생끼리 노출되어 학습 효율 반감</li>
+                        <li>교사 1명당 학생 15명 이상의 대규모 수동형 수업</li>
+                        <li>나의 관심사나 속도를 고려하지 않는 획일적 진도</li>
+                    </ul>
+                </div>
+                
+                <!-- VS Divider -->
+                <div class="vs-divider">VS</div>
+                
+                <!-- Right: English Dream -->
+                <div class="comparison-card english-dream-card">
+                    <div class="badge-recommend">BEST VALUE</div>
+                    <div class="card-header">
+                        <h3>영어드림 어학연수 코스</h3>
+                        <p style="margin-top: 5px; color: var(--secondary); font-weight: 700;">원어민 1:1 맞춤 수업 + 일일 PT 시스템</p>
+                    </div>
+                    <div class="price-box highlight">
+                        <span class="price-label" style="color: var(--secondary);">압도적인 비용 혜택</span>
+                        <span class="price-value" style="color: #e91e63; font-size: 1.85rem; font-weight: 900; letter-spacing: -0.5px;">🔥 어학연수 10분의 1 비용!</span>
+                    </div>
+                    <ul class="compare-details">
+                        <li style="font-weight: 600; color: #333;">월 수십만 원대로 구현되는 초효율 어학연수 환경</li>
+                        <li>원어민 강사와 오롯이 나에게만 집중되는 밀도 높은 1:1 회화</li>
+                        <li>담임 관리 교사가 밀착 코칭하는 체계적인 데일리 피드백 PT</li>
+                        <li>영어 노출을 일상화시키는 맞춤 미션 및 24시간 학습 설계</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonial Video Section -->
+    <section id="testimonial-video" class="section testimonial-section">
+        <div class="container">
+            <div class="testimonial-layout">
+                <div class="testimonial-copy fade-in">
+                    <span class="badge">STUDENT REVIEW</span>
+                    <h2>수강생이 직접 들려주는<br>영어드림 후기</h2>
+                    <p>실제 수강 경험과 변화를 영상으로 확인해 보세요.</p>
+                </div>
+                <div class="testimonial-video-wrap fade-in">
+                    <iframe
+                        src="https://www.youtube.com/embed/XS7mKBtyPUM"
+                        title="영어드림 수강생 후기 영상"
+                        loading="lazy"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum Tower Section -->
+    <section id="curriculum" class="section">
+        <div class="container">
+            <div class="curriculum-layout">
+                <div class="curriculum-copy-col">
+                    <div class="curriculum-header fade-in">
+                        <h2 style="color: #4A148C; font-size: 3.5rem; font-weight: 800; line-height: 1.3; margin-bottom: 25px; letter-spacing: -1.5px;">영어 실력,<br>층층이 성장하는<br>드림 타워 커리큘럼</h2>
+                        <p style="font-size: 1.25rem; line-height: 1.8;">한 단계씩 올라가며, 말하기 실력이 눈에 보이게 성장합니다.<br><strong style="font-size: 1.35rem; color: #333;">초보자부터 고급 스피킹까지</strong><br>당신의 현재 수준에서 출발해 최종 목표까지 함께 올라갑니다.</p>
+                    </div>
+                    <div class="curriculum-tower">
+                    <!-- 1F -->
+                    <div class="tower-floor fade-in">
+                        <div class="floor-marker" style="background-color: #9C27B0;"></div>
+                        <div class="floor-content">
+                            <h3><span>1F</span> — Foundation Zone</h3>
+                            <p>지식·기초회화·패턴 학습을 통해<br>영어 문장을 '만들어 말하는 힘'을 기르는 단계입니다.<br>영어가 두렵지 않고, 입이 열리기 시작합니다.</p>
+                        </div>
+                    </div>
+                    <!-- 2F -->
+                    <div class="tower-floor fade-in" style="transition-delay: 0.1s;">
+                        <div class="floor-marker" style="background-color: #1976D2;"></div>
+                        <div class="floor-content">
+                            <h3><span>2F</span> — Daily Speaking Zone</h3>
+                            <p>실생활 표현·스몰토크·실전대화를 통해<br>일상에서 자연스럽게 말하는 감각을 만듭니다.<br>"이해하는 영어 → 말하는 영어"로 전환되는 구간입니다.</p>
+                        </div>
+                    </div>
+                    <!-- 3F -->
+                <div class="tower-floor fade-in" style="transition-delay: 0.2s;">
+                    <div class="floor-marker" style="background-color: #FFEB3B;"></div>
+                    <div class="floor-content">
+                        <h3><span>3F</span> — Skill Upgrade Zone</h3>
+                        <p>표현 확장과 상황별 대화를 연습하며<br>자신의 말에 개성·길이·표현력이 더해집니다.<br>프레임이 넓어지며 '대화가 이어지는 영어'를 완성합니다.</p>
+                    </div>
+                </div>
+                <!-- 4F -->
+                <div class="tower-floor fade-in" style="transition-delay: 0.3s;">
+                    <div class="floor-marker" style="background-color: #FF9800;"></div>
+                    <div class="floor-content">
+                        <h3><span>4F</span> — Test & Performance Zone</h3>
+                        <p><strong>TOEIC Speaking</strong> / <strong>OPIc</strong> / 면접 / 스피치 등<br>결과로 증명되는 스피킹 실력을 만드는 단계입니다.<br>점수와 실력을 동시에 잡는 전략적 훈련이 진행됩니다.</p>
+                    </div>
+                </div>
+                <!-- 5F -->
+                <div class="tower-floor fade-in" style="transition-delay: 0.4s;">
+                    <div class="floor-marker" style="background-color: #D32F2F;"></div>
+                    <div class="floor-content">
+                        <h3><span>5F</span> — Mastery & Pro Track</h3>
+                        <p>비즈니스 커뮤니케이션·프리토킹·고급 응대 표현 등<br>실무와 현장에서 바로 쓰는 영어를 연습합니다.<br>이 단계의 목표는 점수가 아니라, 영어로 일하는 사람입니다.</p>
+                    </div>
+                </div>
+                    </div>
+                </div>
+                <div class="curriculum-image-col fade-in">
+                    <img src="images/curriculum_tower_otter.png" alt="수달 마스코트와 함께 올라가는 드림 타워 커리큘럼" class="curriculum-tower-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- B2B Section -->
+    <section id="b2b" class="section b2b-section">
+        <div class="container">
+            <div class="b2b-layout">
+                <div class="b2b-copy fade-in">
+                    <span class="badge">B2B PROGRAM</span>
+                    <h2>임직원 영어교육도<br>영어드림으로 운영하세요</h2>
+                    <p>직무별 회화, 해외영업, 미팅, 프레젠테이션, 임원 코칭까지 기업 목적에 맞춘 맞춤형 영어교육을 설계합니다.</p>
+                    <div class="b2b-benefits">
+                        <article>
+                            <h3>맞춤 설계</h3>
+                            <p>직무, 레벨, 목표에 따라 과정과 교재를 다르게 구성합니다.</p>
+                        </article>
+                        <article>
+                            <h3>운영 리포트</h3>
+                            <p>출석, 진도, 과제, 성취도를 담당자에게 정기 공유합니다.</p>
+                        </article>
+                        <article>
+                            <h3>유연한 수업</h3>
+                            <p>1:1, 소그룹, 집중 과정 등 조직 규모에 맞게 운영합니다.</p>
+                        </article>
+                    </div>
+                </div>
+
+                <div class="b2b-form-wrap fade-in">
+                    <h3>기업교육 문의</h3>
+                    <form id="businessForm" class="business-form">
+                        <div class="form-grid">
+                            <div class="form-group">
+                                <label for="company-name">회사명 <span class="required">*</span></label>
+                                <input type="text" id="company-name" name="company_name" autocomplete="organization" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="manager-name">담당자명 <span class="required">*</span></label>
+                                <input type="text" id="manager-name" name="manager_name" autocomplete="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="business-email">이메일 <span class="required">*</span></label>
+                                <input type="email" id="business-email" name="business_email" autocomplete="email" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="employee-count">교육 대상 인원 <span class="required">*</span></label>
+                                <select id="employee-count" name="employee_count" required>
+                                    <option value="">선택해 주세요</option>
+                                    <option value="1-10">1-10명</option>
+                                    <option value="11-30">11-30명</option>
+                                    <option value="31-100">31-100명</option>
+                                    <option value="101+">101명 이상</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <fieldset data-required-group="business_goal">
+                                <legend>필요한 교육 <span class="required">*</span></legend>
+                                <div class="checkbox-group vertical">
+                                    <label><input type="checkbox" name="business_goal" value="daily"> 일반 회화</label>
+                                    <label><input type="checkbox" name="business_goal" value="business"> 비즈니스 회화</label>
+                                    <label><input type="checkbox" name="business_goal" value="meeting"> 미팅 / 프레젠테이션</label>
+                                    <label><input type="checkbox" name="business_goal" value="executive"> 임원 / 리더 코칭</label>
+                                </div>
+                            </fieldset>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="business-message">문의 내용 <span class="required">*</span></label>
+                            <textarea id="business-message" name="business_message" rows="5" placeholder="희망 일정, 교육 목적, 현재 고민을 적어 주세요." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary full-width">기업교육 상담 요청</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Policy Section -->
+    <section id="policy" class="section bg-light">
+        <div class="container">
+            <div class="section-header fade-in">
+                <h2>수강 규정</h2>
+                <p>영어드림의 수강 및 연기, 예약 규정을 안내해 드립니다.</p>
+            </div>
+            
+            <div class="policy-grid fade-in">
+                <!-- Card 1 -->
+                <div class="policy-card">
+                    <h3>수업 연기</h3>
+                    <p class="highlight-text">수강권 당 가능한 횟수 내에서 일반 연기 또는 당일 연기 가능<br>
+                    <strong class="red-text">일반연기/보강연기 신청 후 취소 불가</strong><br>
+                    자유예약은 일반 연기 및 보강 연기 불가</p>
+                    <h4>&lt;수업별 연기 가능 횟수&gt;</h4>
+                    <ul>
+                        <li>주2회 수업 : 총 1회 연기 가능</li>
+                        <li>주3회 수업 : 총 2회 연기 가능</li>
+                        <li>주5회 수업 : 총 3회 연기 가능</li>
+                    </ul>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="policy-card">
+                    <h3>일반 연기 & 보강 연기 (당일)</h3>
+                    <div class="policy-split">
+                        <div class="policy-half">
+                            <h4><span class="box-icon purple"></span>일반 연기</h4>
+                            <ul>
+                                <li>등록된 수강의 마지막 수강 일자가 다음 수강 일자로 미루어 지는 것 <span class="red-text">(하루 전, 자정까지 신청 가능)</span></li>
+                                <li>40분 수업의 경우 각각의 수강권에서 연기 신청해야 함.</li>
+                                <li class="red-text">수강 하루 전일, 자정 전까지 사이트에서 연기 신청해야 함.</li>
+                            </ul>
+                            <p class="ex-text">ex) 12회 수강 기준 등록된 마지막 수업이 8월 28일인 경우, 1회 수업 연기 시 30일 종료 일자로 연기</p>
+                        </div>
+                        <div class="policy-half">
+                            <h4><span class="box-icon blue"></span>보강 연기 (당일 연기)</h4>
+                            <ul>
+                                <li class="red-text">등록된 수강 시간/요일에 관계없이 변경하여 수강하는 것.</li>
+                                <li class="red-text">수강 당일에만 신청 가능하며, 수강 1시간 전까지 사이트에서 연기 신청해야 함.</li>
+                                <li>토요 집중 수업은 보강 연기 불가</li>
+                            </ul>
+                            <p class="ex-text">ex) 월요일 15:00 수강 -> 월 06:00 ~ 화 23:30 중 선택 가능</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="policy-card">
+                    <h3>자유 예약</h3>
+                    <ul>
+                        <li>사용 기간은 자유예약 수강 등록일부터 공휴일 포함 30일이며, 미 소진 시 잔여 횟수는 자동 소멸 됨.</li>
+                        <li>자유 예약은 수강 연기, 보강 연기(당일 연기), 수강 시간 변경, 수강 중지, 수강 취소 불가</li>
+                        <li>1일 횟수 제한 없이 가능한 잔여 횟수 내에서 수강 신청 가능</li>
+                        <li>수강 신청은 수강 시작 1시간 전까지 신청 가능하며, 신청일로부터 2일 이내로 예약 가능 (예시 : 8월 3일 수강 신청 시 8월 4일 수강까지 예약 가능)</li>
+                        <li>자유예약 수강은 과정 변경만 가능 (담당 플래너를 통해서 수강 6시간 전까지)</li>
+                    </ul>
+                </div>
+
+                <!-- Card 4 -->
+                <div class="policy-card">
+                    <h3>수업 중지</h3>
+                    <p class="highlight-text">2주 이상 수강 진행 불가 시 수강 중지 가능</p>
+                    <h4>&lt;수업별 중지 가능 횟수&gt;</h4>
+                    <ul>
+                        <li>주2회, 주3회, 주5회 : 1개월 수강권 당 1회 중지 가능. (1개월 수강권 기준 : 주2회 - 8회 / 주3회 - 12회 / 주5회 - 20회)</li>
+                        <li class="red-text">수강시간 2시간 전까지 홈페이지에서 중지 가능.</li>
+                        <li class="red-text">중지 후 2주 이내 재등록 불가 / 중지 후 6개월 이내 재등록해야 함.</li>
+                        <li class="red-text">기간 내 미등록 시 등록된 전체 수강권 및 잔여 횟수 소멸되어 사용 불가.</li>
+                        <li class="red-text">재등록 시 담당 강사님 변경될 수 있음.</li>
+                    </ul>
+                </div>
+
+                <!-- Card 5 -->
+                <div class="policy-card">
+                    <h3>수업 휴강일 & 녹화 영상</h3>
+                    <div class="policy-split">
+                        <div class="policy-half">
+                            <h4>수업 휴강일</h4>
+                            <ul>
+                                <li>한국 공휴일 : 휴강</li>
+                                <li>대체 공휴일의 경우 당사 사정에 따라 휴강 여부 사전 공지</li>
+                            </ul>
+                        </div>
+                        <div class="policy-half">
+                            <h4>녹화 영상</h4>
+                            <ul>
+                                <li>수업 영상은 자동 녹화 되며, 3주간 제공 됨.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Reservation Section -->
+    <section id="reservation" class="section">
+        <div class="container">
+            <div class="reservation-wrapper fade-in">
+                <div class="reservation-info">
+                    <h2>상담예약</h2>
+                    <p>지금 바로 무료 상담을 예약하세요.<br>전문 매니저가 친절하게 안내해 드립니다.</p>
+                    <ul class="contact-info">
+                        <li><strong>전화:</strong> 02-1234-5678</li>
+                        <li><strong>이메일:</strong> hello@englishdream.com</li>
+                        <li><strong>운영시간:</strong> 평일 10:00 - 20:00</li>
+                    </ul>
+                </div>
+                <div class="reservation-form">
+                    <form id="contactForm" class="survey-form">
+                        <!-- 1. 이름 -->
+                        <div class="form-group">
+                            <label for="name">1. 이름 <span class="required">*</span></label>
+                            <input type="text" id="name" name="name" autocomplete="name" required>
+                        </div>
+                        
+                        <!-- 2. 연락처 -->
+                        <div class="form-group">
+                            <label for="phone1">2. 연락처 <span class="required">*</span></label>
+                            <div class="phone-inputs">
+                                <input type="tel" id="phone1" name="phone1" inputmode="numeric" autocomplete="tel-area-code" maxlength="3" pattern="[0-9]{2,3}" aria-label="연락처 앞자리" required>
+                                <span>-</span>
+                                <input type="tel" id="phone2" name="phone2" inputmode="numeric" autocomplete="tel-local-prefix" maxlength="4" pattern="[0-9]{3,4}" aria-label="연락처 중간자리" required>
+                                <span>-</span>
+                                <input type="tel" id="phone3" name="phone3" inputmode="numeric" autocomplete="tel-local-suffix" maxlength="4" pattern="[0-9]{4}" aria-label="연락처 뒷자리" required>
+                            </div>
+                        </div>
+
+                        <!-- 3. 성별 -->
+                        <div class="form-group">
+                            <fieldset>
+                                <legend>3. 성별 <span class="required">*</span></legend>
+                            <div class="radio-group">
+                                <label><input type="radio" name="gender" value="male" required> 남성</label>
+                                <label><input type="radio" name="gender" value="female" required> 여성</label>
+                            </div>
+                            </fieldset>
+                        </div>
+
+                        <!-- 4. 실력 -->
+                        <div class="form-group">
+                            <fieldset>
+                                <legend>4. 나의 영어회화 실력은? <span class="required">*</span></legend>
+                            <div class="radio-group vertical">
+                                <label><input type="radio" name="level" value="level1" required> 문장보다는 단어로 나열하는 수준이에요!</label>
+                                <label><input type="radio" name="level" value="level2" required> 외국인과 Small talk이 가능해요!</label>
+                                <label><input type="radio" name="level" value="level3" required> 외국인과 일상 대화는 문제 없어요!</label>
+                                <label><input type="radio" name="level" value="level4" required> 비즈니스 토론이 가능해요!</label>
+                            </div>
+                            </fieldset>
+                        </div>
+
+                        <!-- 5. 경험 -->
+                        <div class="form-group">
+                            <fieldset data-required-group="experience">
+                                <legend>5. 영어회화 경험은 있으신가요? <span class="required">*</span></legend>
+                            <div class="checkbox-group vertical">
+                                <label><input type="checkbox" name="experience" value="어학연수"> 어학연수</label>
+                                <label><input type="checkbox" name="experience" value="과외"> 과외</label>
+                                <label><input type="checkbox" name="experience" value="학원"> 학원</label>
+                                <label><input type="checkbox" name="experience" value="앱"> 앱(스픽&말해보카 등)</label>
+                                <label><input type="checkbox" name="experience" value="회화스터디"> 회화스터디</label>
+                                <label class="with-text"><input type="checkbox" name="experience" value="기타"> 기타: <input type="text" class="inline-input"></label>
+                            </div>
+                            </fieldset>
+                        </div>
+
+                        <!-- 6. 목적 -->
+                        <div class="form-group">
+                            <fieldset data-required-group="reason">
+                                <legend>6. 영어공부를 배우려는 이유는 어떻게 되시나요? <span class="required">*</span></legend>
+                            <div class="checkbox-group vertical">
+                                <label><input type="checkbox" name="reason" value="해외생활"> 해외생활(유학, 워홀, 어학연수)</label>
+                                <label><input type="checkbox" name="reason" value="취업_비즈니스"> 취업 & 비즈니스</label>
+                                <label><input type="checkbox" name="reason" value="여행_자기개발"> 여행 & 자기개발</label>
+                                <label><input type="checkbox" name="reason" value="영어시험"> 영어시험 대비</label>
+                                <label class="with-text"><input type="checkbox" name="reason" value="기타"> 기타: <input type="text" class="inline-input"></label>
+                            </div>
+                            </fieldset>
+                        </div>
+
+                        <!-- 7. 시간 -->
+                        <div class="form-group">
+                            <fieldset data-required-group="contact_time">
+                                <legend>7. 연락 가능한 시간 <span class="required">*</span></legend>
+                            <div class="checkbox-group vertical">
+                                <label><input type="checkbox" name="contact_time" value="오전"> 오전(09:00 ~ 12:00)</label>
+                                <label><input type="checkbox" name="contact_time" value="오후"> 오후(12:00 ~ 18:00)</label>
+                                <label><input type="checkbox" name="contact_time" value="저녁"> 저녁(18:00 ~ 23:00)</label>
+                            </div>
+                            </fieldset>
+                        </div>
+
+                        <!-- 8. 개인정보 -->
+                        <div class="form-group">
+                            <label for="privacy-terms">개인정보 수집 및 이용 동의 <span class="required">*</span></label>
+                            <textarea id="privacy-terms" readonly class="terms-box" rows="7">1. 회원 가입 및 관리
+회원 가입 의사 확인, 회원제 서비스 제공에 따른 본인 식별·인증, 회원자격 유지·관리, 제한적 본인확인제 시행에 따른 본인확인, 서비스 부정이용 방지, 만 14세 미만 아동의 개인정보 처리 시 법정대리인의 동의 여부 확인, 각종 고지·통지, 고충 처리 등을 목적으로 개인정보를 처리합니다.
+
+2. 재화 또는 서비스 제공
+물품 배송, 서비스 제공, 계약서 및 청구서 발송, 콘텐츠 제공, 맞춤서비스 제공, 본인인증, 연령인증, 요금 결제 및 정산, 채권추심 등을 목적으로 개인정보를 처리합니다.
+
+3. 고충 처리
+민원인의 신원 확인, 민원사항 확인, 사실조사를 위한 연락·통지, 처리 결과 통보 등의 목적으로 개인정보를 처리합니다.</textarea>
+                            <label class="terms-agree"><input type="checkbox" name="privacy_agree" required> 개인정보 수집 및 이용에 동의합니다.</label>
+                        </div>
+
+                        <button type="submit" class="btn submit-btn full-width">제출하기</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">English Dream</div>
+                <p>온라인 전문 영어회화의 새로운 기준을 제시합니다.</p>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 English Dream. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="#">이용약관</a>
+                    <a href="#">개인정보처리방침</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
