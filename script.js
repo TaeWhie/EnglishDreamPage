@@ -1,4 +1,137 @@
 document.addEventListener('DOMContentLoaded', () => {
+    const metaPixelId = window.EnglishDreamConfig?.metaPixelId?.trim();
+    const kakaoChatUrl = window.EnglishDreamConfig?.kakaoChatUrl?.trim();
+
+    const initMetaPixel = () => {
+        if (!metaPixelId) return;
+        if (window.fbq) return;
+
+        window.fbq = function () {
+            window.fbq.callMethod
+                ? window.fbq.callMethod.apply(window.fbq, arguments)
+                : window.fbq.queue.push(arguments);
+        };
+
+        if (!window._fbq) window._fbq = window.fbq;
+        window.fbq.push = window.fbq;
+        window.fbq.loaded = true;
+        window.fbq.version = '2.0';
+        window.fbq.queue = [];
+
+        const script = document.createElement('script');
+        script.async = true;
+        script.src = 'https://connect.facebook.net/en_US/fbevents.js';
+        document.head.appendChild(script);
+
+        window.fbq('init', metaPixelId);
+        window.fbq('track', 'PageView');
+    };
+
+    const trackMetaEvent = (eventName, params = {}) => {
+        if (window.fbq) {
+            window.fbq('track', eventName, params);
+        }
+    };
+
+    initMetaPixel();
+
+    const setupKakaoChatButton = () => {
+        const kakaoButton = document.querySelector('.kakao-chat-button');
+        if (!kakaoButton) return;
+
+        if (kakaoChatUrl) {
+            kakaoButton.href = kakaoChatUrl;
+            kakaoButton.target = '_blank';
+            kakaoButton.rel = 'noopener noreferrer';
+        }
+
+        kakaoButton.addEventListener('click', () => {
+            trackMetaEvent('Contact', {
+                content_name: 'KakaoTalk 1:1 chat'
+            });
+        });
+    };
+
+    const sendYouTubeCommand = (iframe, func) => {
+        iframe.contentWindow?.postMessage(JSON.stringify({
+            event: 'command',
+            func,
+            args: []
+        }), 'https://www.youtube.com');
+    };
+
+    const setupVideoSoundToggles = () => {
+        document.querySelectorAll('.testimonial-video-wrap').forEach((wrap) => {
+            const iframe = wrap.querySelector('iframe.auto-play-video');
+            const button = wrap.querySelector('.video-sound-toggle');
+            if (!iframe || !button) return;
+
+            button.addEventListener('click', () => {
+                sendYouTubeCommand(iframe, 'unMute');
+                sendYouTubeCommand(iframe, 'playVideo');
+                button.remove();
+            });
+        });
+    };
+
+    const setupViewportVideoPlayback = () => {
+        const videos = [...document.querySelectorAll('video.auto-play-video, iframe.auto-play-video')];
+        if (!videos.length || !('IntersectionObserver' in window)) return;
+
+        videos.forEach((video) => {
+            if (video.tagName === 'VIDEO') {
+                video.muted = true;
+                video.playsInline = true;
+            } else {
+                video.addEventListener('load', () => {
+                    if (video.dataset.videoVisible === 'true') {
+                        sendYouTubeCommand(video, 'playVideo');
+                    }
+                });
+            }
+        });
+
+        const videoObserver = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                const media = entry.target;
+                const shouldPlay = entry.isIntersecting && entry.intersectionRatio >= 0.45;
+                media.dataset.videoVisible = String(shouldPlay);
+
+                if (media.tagName === 'IFRAME') {
+                    sendYouTubeCommand(media, shouldPlay ? 'playVideo' : 'pauseVideo');
+                    return;
+                }
+
+                if (shouldPlay) {
+                    media.play().catch(() => {});
+                } else {
+                    media.pause();
+                }
+            });
+        }, {
+            threshold: [0, 0.45, 0.75]
+        });
+
+        videos.forEach((video) => videoObserver.observe(video));
+
+        document.addEventListener('visibilitychange', () => {
+            if (!document.hidden) return;
+
+            videos.forEach((media) => {
+                if (media.tagName === 'IFRAME') {
+                    sendYouTubeCommand(media, 'pauseVideo');
+                    return;
+                }
+
+                media.pause();
+            });
+        });
+    };
+
+    setupKakaoChatButton();
+    setupVideoSoundToggles();
+    setupViewportVideoPlayback();
+
     // Header Scroll Effect
     const header = document.getElementById('header');
     window.addEventListener('scroll', () => {
@@ -197,6 +330,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             e.preventDefault();
             const name = document.getElementById('name').value;
+            trackMetaEvent('Lead', {
+                content_name: 'Consultation reservation',
+                content_category: 'B2C'
+            });
             alert(`감사합니다, ${name}님! 상담 예약이 접수되었습니다. 곧 연락드리겠습니다.`);
             contactForm.reset();
             contactForm.querySelectorAll('.form-group.is-invalid').forEach((group) => {
@@ -217,6 +354,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
             e.preventDefault();
             const companyName = document.getElementById('company-name').value;
+            trackMetaEvent('Lead', {
+                content_name: 'Business education inquiry',
+                content_category: 'B2B'
+            });
             alert(`${companyName} 기업교육 문의가 접수되었습니다. 담당자가 곧 연락드리겠습니다.`);
             businessForm.reset();
         });

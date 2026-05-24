@@ -8,6 +8,7 @@
     <!-- Google Fonts: Pretendard -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
     <link rel="stylesheet" href="style.css">
+    <script src="site-config.js"></script>
 </head>
 <body>
     <!-- Header / Navigation -->
@@ -249,12 +250,13 @@
                 </div>
                 <div class="testimonial-video-wrap fade-in">
                     <iframe
-                        src="https://www.youtube.com/embed/XS7mKBtyPUM"
+                        class="auto-play-video"
+                        src="https://www.youtube.com/embed/XS7mKBtyPUM?enablejsapi=1&autoplay=1&mute=1&playsinline=1&rel=0&loop=1&playlist=XS7mKBtyPUM&v=20260524"
                         title="영어드림 수강생 후기 영상"
-                        loading="lazy"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen>
                     </iframe>
+                    <button class="video-sound-toggle" type="button" aria-label="후기 영상 소리 켜기">소리 켜기</button>
                 </div>
             </div>
         </div>
@@ -628,6 +630,11 @@
         </div>
     </footer>
 
-    <script src="script.js"></script>
+    <a href="#reservation" class="kakao-chat-button" aria-label="카카오톡 1:1 상담 열기">
+        <span class="kakao-chat-icon">톡</span>
+        <span>카톡 1:1 상담</span>
+    </a>
+
+    <script src="script.js?v=20260524-video-chat"></script>
 </body>
 </html>
