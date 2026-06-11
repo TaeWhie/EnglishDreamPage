@@ -3,14 +3,14 @@
     "trailingSlash": false,
     "redirects": [
         {
-            "source": "/:path*",
+            "source": "/(.*)",
             "has": [
                 {
                     "type": "host",
                     "value": "engdream.com"
                 }
             ],
-            "destination": "https://www.engdream.com/:path*",
+            "destination": "https://www.engdream.com/$1",
             "permanent": true
         }
     ],
