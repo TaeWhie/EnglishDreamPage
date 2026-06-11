@@ -1,0 +1,42 @@
+{
+  "name": "english-dream-dashboard",
+  "version": "1.0.0",
+  "description": "English Dream private marketing dashboard desktop app",
+  "author": "English Dream",
+  "main": "main.js",
+  "private": true,
+  "scripts": {
+    "sync": "powershell -ExecutionPolicy Bypass -File scripts/sync-dashboard.ps1",
+    "start": "npm run sync && electron .",
+    "build": "npm run sync && electron-builder --win dir",
+    "build:dir": "npm run sync && electron-builder --win dir",
+    "build:portable": "npm run sync && electron-builder --win portable"
+  },
+  "build": {
+    "appId": "com.englishdream.dashboard",
+    "productName": "English Dream Dashboard",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "lock.html",
+      "app/**"
+    ],
+    "win": {
+      "target": [
+        "dir"
+      ],
+      "signAndEditExecutable": false
+    },
+    "nsis": {
+      "oneClick": false,
+      "allowToChangeInstallationDirectory": true
+    }
+  },
+  "devDependencies": {
+    "electron": "^31.7.7",
+    "electron-builder": "^24.13.3"
+  }
+}
