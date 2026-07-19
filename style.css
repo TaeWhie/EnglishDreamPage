@@ -6291,10 +6291,6 @@ footer {
 }
 
 /* 2026-07 mobile image and curriculum UX pass */
-#name[lang="ko"] {
-    ime-mode: active;
-}
-
 .curriculum-image-col {
     display: flex;
     justify-content: center;
