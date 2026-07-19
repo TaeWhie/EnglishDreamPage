@@ -7,7 +7,12 @@
     <meta name="description" content="영어드림은 성인 영어회화, 해외여행, 워킹홀리데이, 비즈니스 영어를 준비하는 분들을 위한 원어민 1:1 온라인 영어회화 플랫폼입니다. 무료 레벨테스트와 맞춤 컨설팅을 제공합니다.">
     <!-- Google Fonts: Pretendard -->
     <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260718-seo-guides-v1">
+    <link rel="preload" as="image" href="images/hero-classroom-960.jpg" imagesrcset="images/hero-classroom-960.jpg 960w, images/hero-classroom-1440.jpg 1440w" imagesizes="(max-width: 768px) 92vw, 52vw" fetchpriority="high">
+    <link rel="shortcut icon" href="https://www.engdream.com/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="https://www.engdream.com/apple-touch-icon.png" sizes="180x180">
+    <link rel="manifest" href="site.webmanifest">
+    <meta name="theme-color" content="#d9a7ee">
     <link rel="canonical" href="https://www.engdream.com/">
     <meta name="robots" content="index, follow">
     <meta name="author" content="영어드림">
@@ -48,56 +53,99 @@
     <!-- Header / Navigation -->
     <header id="header">
         <div class="nav-container">
-            <a href="#home" class="logo"><img src="images/logo.png" alt="English Dream Logo" style="height: 90px; width: auto; object-fit: contain;"></a>
+            <a href="#home" class="logo"><img src="images/logo.png" alt="English Dream Logo"></a>
             <nav aria-label="주요 메뉴">
                 <ul class="nav-links" id="primary-navigation">
                     <li><a href="#home">홈</a></li>
                     <li><a href="#features">영어드림 특징</a></li>
-                    <li><a href="#curriculum">커리큘럼</a></li>
+                    <li><a href="curriculum.html">커리큘럼</a></li>
                     <li><a href="b2b.html">기업교육</a></li>
                     <li><a href="policy.html">수강규정</a></li>
+                    <li><a href="faq.html">FAQ</a></li>
                     <li><a href="#reservation" class="nav-btn">상담예약</a></li>
                 </ul>
             </nav>
             <button class="hamburger" type="button" aria-label="메뉴 열기" aria-controls="primary-navigation" aria-expanded="false">
-                <span></span>
-                <span></span>
-                <span></span>
+                <span class="hamburger-box" aria-hidden="true">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </span>
             </button>
         </div>
     </header>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-content fade-in" style="display: flex; align-items: center; justify-content: space-between; gap: 80px; text-align: left;">
+        <div class="hero-content">
             <div class="hero-text">
-                <span class="badge">동시 수강생 2000+ | 재수강률 87.3%</span>
-                <h1 style="font-size: 3.2rem;">아직도 영어회화 어떻게<br>시작해야할지 막막하신가요?</h1>
-                <p><span class="highlight" style="font-size: 1.6rem; font-weight: 700;">영어드림에서 1:1 맞춤 PT를 시작하세요</span></p>
-                <div class="hero-buttons" style="margin-top: 30px; justify-content: flex-start;">
-                    <a href="#reservation" class="btn btn-primary">1:1 맞춤 PT 상담하기</a>
-                    <a href="#features" class="btn btn-secondary">특징 자세히 보기</a>
+                <span class="hero-badge">동시 수강생 2,000+ <i aria-hidden="true">·</i> 재수강률 87.3%</span>
+                <p class="hero-eyebrow" data-hero-eyebrow>성인을 위한 원어민 1:1 온라인 영어회화</p>
+                <h1 data-hero-title><span class="hero-nowrap">왕초보도 10분</span><br>무료진단부터<br>매일 입이 트이는 1:1회화</h1>
+                <p class="hero-description">원어민 수업과 담당 선생님의 데일리 관리로<br class="desktop-copy-break"> 수업 밖에서도 영어를 계속 말하게 만듭니다.</p>
+                <div class="hero-buttons">
+                    <a href="#reservation" class="btn btn-primary hero-primary-cta" data-cta-location="hero_primary">내 영어 레벨 무료로 확인하기</a>
+                    <a href="#features" class="hero-secondary-cta" data-cta-location="hero_secondary">수업 방식 30초 만에 보기 <span aria-hidden="true">↓</span></a>
                 </div>
+                <p class="hero-reassurance"><span>10분 무료 진단</span><i aria-hidden="true">·</i><span>결제 의무 없음</span><i aria-hidden="true">·</i><span>연락 시간 선택</span></p>
             </div>
-            <div class="hero-images" style="display: flex; flex-direction: column; gap: 20px; align-items: flex-end;">
-                <img src="images/hero_main.png" alt="영어회화 수업" style="width: 100%; max-width: 500px; mix-blend-mode: multiply;">
+
+            <div class="hero-visual" aria-label="한국인 수강생과 필리핀 원어민 선생님의 일대일 온라인 영어 수업">
+                <div class="hero-video-card">
+                    <div class="hero-live-status" aria-hidden="true">
+                        <span><i></i> LIVE</span>
+                        <b class="hero-voice-wave">
+                            <i></i><i></i><i></i><i></i><i></i>
+                        </b>
+                    </div>
+                    <picture class="hero-classroom-picture">
+                        <source media="(max-width: 768px)" srcset="images/hero-classroom-960.jpg">
+                        <img src="images/hero-classroom-1440.jpg" srcset="images/hero-classroom-960.jpg 960w, images/hero-classroom-1440.jpg 1440w" sizes="(max-width: 768px) 92vw, 52vw" width="1440" height="960" alt="한국인 수강생과 필리핀 원어민 선생님이 화상으로 영어 수업하는 모습" fetchpriority="high" decoding="async">
+                    </picture>
+                    <div class="hero-proof-card">
+                        <span><b aria-hidden="true">✓</b> 원어민 1:1 실시간 수업</span>
+                        <span><b aria-hidden="true">✓</b> 개인별 데일리 피드백 제공</span>
+                    </div>
+                    <div class="hero-call-controls" aria-hidden="true">
+                        <span class="call-control">
+                            <svg viewBox="0 0 24 24" focusable="false"><rect x="9" y="3" width="6" height="11" rx="3"></rect><path d="M5.5 11.5a6.5 6.5 0 0 0 13 0M12 18v3M8.5 21h7"></path></svg>
+                        </span>
+                        <span class="call-control">
+                            <svg viewBox="0 0 24 24" focusable="false"><rect x="3" y="6" width="13" height="12" rx="2"></rect><path d="m16 10 5-3v10l-5-3z"></path></svg>
+                        </span>
+                        <span class="call-control call-more">
+                            <svg viewBox="0 0 24 24" focusable="false"><circle cx="12" cy="5" r="1.6"></circle><circle cx="12" cy="12" r="1.6"></circle><circle cx="12" cy="19" r="1.6"></circle></svg>
+                        </span>
+                        <span class="call-control call-end">
+                            <svg viewBox="0 0 24 24" focusable="false"><path d="M6.6 10.8c1.5 3 3.9 5.4 6.9 6.9l2.3-2.3c.3-.3.8-.4 1.2-.2 1.3.5 2.7.8 4.1.8.7 0 1.2.5 1.2 1.2v3.7c0 .7-.5 1.2-1.2 1.2C10.6 22.1 2 13.5 2 3c0-.7.5-1.2 1.2-1.2H7c.7 0 1.2.5 1.2 1.2 0 1.4.3 2.8.8 4.1.1.4.1.8-.2 1.2l-2.2 2.5z"></path></svg>
+                        </span>
+                    </div>
+                </div>
+                <img class="hero-mascot" src="images/hero_main.png" alt="" width="1254" height="1254" decoding="async">
             </div>
         </div>
+
+        <a href="#features" class="hero-scroll-cue">
+            <span>아래에서 영어드림의 학습 시스템을 확인하세요</span>
+            <b aria-hidden="true">↓</b>
+        </a>
     </section>
 
     <!-- Why English Dream Section -->
     <section id="features" class="section bg-light">
         <div class="container">
             <div class="section-header fade-in">
-                <h2>왜 영어회화는 영어드림에서 시작할까요?</h2>
+                <h2>왜 영어회화는<br class="mobile-title-break"> 영어드림에서 시작할까요?</h2>
                 <p>수강생의 100% 실력 향상을 위해 만들어진 영어드림만의 특별한 시스템</p>
             </div>
+            <p class="mobile-section-guide" aria-hidden="true">궁금한 항목을 눌러 핵심 내용을 확인하세요.</p>
             <div class="features-flex">
                 <div class="feature-item fade-in">
                     <img src="images/man.gif" alt="원어민 강사와 수강생이 온라인 수업하는 모습" class="feature-image">
                     <div class="feature-text">
                         <h3><span>01</span> 검증된 원어민 선생님</h3>
-                        <p>영어드림의 모든 원어민 선생님은 철저한 기준으로 선발됩니다.<br>단순한 화상영어가 아니라 실력향상에 초점을 둔 <strong>관리형 영어 학습 시스템</strong>입니다.</p>
+                        <p class="feature-key-message">검증된 선생님과 체계적인 학습 관리</p>
+                        <p>영어드림의 모든 원어민 선생님은 <strong>철저한 기준으로 선발됩니다.</strong><br class="desktop-copy-break"> 단순한 화상영어가 아니라 실력향상에 초점을 둔 <strong>관리형 영어 학습 시스템</strong>입니다.</p>
                     </div>
                 </div>
                 <div class="feature-item feature-item-curriculum fade-in" style="transition-delay: 0.1s;">
@@ -158,8 +206,12 @@
                     </div>
                     <div class="feature-text">
                         <h3><span>02</span> 20가지 이상 맞춤 커리큘럼!</h3>
-                        <p>직무, 레벨, 목표에 따라 가장 잘 맞는 과정으로 세밀하게 설계합니다.</p>
+                        <p class="feature-key-message">목표와 레벨에 맞춘 20가지 이상의 과정</p>
+                        <p>직무, 레벨, 목표에 따라 <strong>가장 잘 맞는 과정</strong>으로 세밀하게 설계합니다.</p>
                         <p style="margin-top: 10px; font-size: 1.05rem; color: #777;">왕초보, 일상영어, 자기개발, 비즈니스, 여행, 인터뷰, 해외취업, 프레젠테이션, 미팅, 영어시험 대비 등</p>
+                        <div style="margin-top: 24px;">
+                            <a href="curriculum.html" class="btn btn-primary">커리큘럼 자세히 보기</a>
+                        </div>
                     </div>
                 </div>
                 <div class="feature-item feature-item-diagnosis fade-in" style="transition-delay: 0.2s;">
@@ -173,7 +225,8 @@
                     </div>
                     <div class="feature-text">
                         <h3><span>03</span> 왕초보부터 원어민 수준까지</h3>
-                        <p>영어드림의 레벨 테스트는 단순히 "초급 중급 고급"으로 나누는 평가가 아닙니다.<br>학습자의 현재 실력을 다각도로 분석하여 가장 효율적인 학습 방향을 설계하는 과정입니다.</p>
+                        <p class="feature-key-message">말하기부터 어휘력까지 5가지 영역 정밀 진단</p>
+                        <p>영어드림의 레벨 테스트는 단순히 "초급 중급 고급"으로 나누는 평가가 아닙니다.<br class="desktop-copy-break"> 학습자의 현재 실력을 <strong>다각도로 분석</strong>하여 <strong>가장 효율적인 학습 방향</strong>을 설계하는 과정입니다.</p>
                         <p style="margin-top: 15px; font-weight: 600; color: #7CA1B4; background: #E8F4F8; display: inline-block; padding: 5px 15px; border-radius: 20px;">말하기, 문법, 듣기, 발음, 어휘력 — 5가지 영역 상세 분석</p>
                         <div style="margin-top: 25px;">
                             <a href="#reservation" class="btn btn-primary">영어실력 진단해보기</a>
@@ -191,7 +244,8 @@
                     </div>
                     <div class="feature-text">
                         <h3><span>04</span> 실시간 일대일 원어민 수업</h3>
-                        <p>영어드림의 실시간 1:1 원어민 수업은 학습자의 수준과 목표에 맞춰 진행되는 완전 맞춤형 수업 시스템입니다.</p>
+                        <p class="feature-key-message">오직 나에게 집중하는 실시간 1:1 수업</p>
+                        <p>영어드림의 실시간 1:1 원어민 수업은 학습자의 수준과 목표에 맞춰 진행되는 <strong>완전 맞춤형 수업 시스템</strong>입니다.</p>
                         <ul class="feature-points">
                             <li>교재 화면과 화상 수업을 함께 보며 진행</li>
                             <li>학생 반응에 맞춘 즉각적인 피드백</li>
@@ -199,7 +253,7 @@
                         </ul>
                     </div>
                 </div>
-                <div class="feature-item fade-in" style="transition-delay: 0.4s;">
+                <div class="feature-item feature-item-management fade-in" style="transition-delay: 0.4s;">
                     <div class="management-left-col">
                         <img src="images/study-plan.png" alt="주간 학습 계획표 예시" class="feature-image feature-image-ui">
                         
@@ -253,8 +307,9 @@
                     </div>
                     <div class="feature-text">
                         <h3><span>05</span> 관리형 학습 시스템</h3>
-                        <p>영어실력이 늘지 않는 가장 큰 이유는 '의지 부족'이 아니라 지속되지 않는 학습구조 때문입니다.<br>영어드림은 수업만 제공하는 방식이 아니라, 학습 전 과정을 관리하는 체계적인 관리형 시스템으로 운영됩니다.</p>
-                        <p style="margin-top: 15px;">담당 관리 선생님이 학생 수업을 직접 모니터링한 뒤 부족한 부분을 분석하여 맞춤 학습 계획표와 데일리 과제를 제공합니다.</p>
+                        <p class="feature-key-message">수업 전후까지 이어지는 데일리 학습 관리</p>
+                        <p>영어실력이 늘지 않는 가장 큰 이유는 <strong>'의지 부족'이 아니라 지속되지 않는 학습구조</strong> 때문입니다.<br class="desktop-copy-break"> 영어드림은 수업만 제공하는 방식이 아니라, <strong>학습 전 과정을 관리</strong>하는 체계적인 관리형 시스템으로 운영됩니다.</p>
+                        <p style="margin-top: 15px;">담당 관리 선생님이 학생 수업을 직접 모니터링한 뒤 부족한 부분을 분석하여 <strong>맞춤 학습 계획표와 데일리 과제</strong>를 제공합니다.</p>
                         
                         <!-- Mobile-only Slider (Positioned above Paragraph 3) -->
                         <div class="management-slider mobile-only" aria-label="학생 관리 피드백 및 모니터링 사례">
@@ -344,7 +399,8 @@
                     </div>
                     <div class="feature-text">
                         <h3><span>06</span> 수업 외 시간 극대화! Booster!</h3>
-                        <p>영어드림은 수업 외 시간에도 멈추지 않는 자연스러운 영어 노출 환경을 설계합니다.<br>재미있고 주도적인 스피킹 과제, 정밀 피드백 쉐도잉 미션을 통해 일상 속에서 영어 습득 속도를 극대화시키는 강력한 부스터 효과를 경험해보세요.</p>
+                        <p class="feature-key-message">수업 밖에서도 계속되는 영어 노출</p>
+                        <p>영어드림은 <strong>수업 외 시간에도 멈추지 않는 자연스러운 영어 노출 환경</strong>을 설계합니다.<br class="desktop-copy-break"> 재미있고 주도적인 스피킹 과제, 정밀 피드백 쉐도잉 미션을 통해 일상 속에서 <strong>영어 습득 속도를 극대화</strong>시키는 강력한 부스터 효과를 경험해보세요.</p>
                         <ul class="feature-points">
                             <li>짧게 반복하는 데일리 표현 학습</li>
                             <li>듣기와 말하기를 잇는 쉐도잉 과제</li>
@@ -356,13 +412,108 @@
         </div>
     </section>
 
+    <!-- Search-focused conversation guides -->
+    <section class="seo-topic-section" aria-labelledby="seo-topic-title">
+        <div class="container">
+            <div class="seo-topic-heading fade-in">
+                <span>ENGLISH CONVERSATION GUIDE</span>
+                <h2 id="seo-topic-title">내 상황에 맞는 영어회화부터 확인하세요</h2>
+                <p>현재 실력과 학습 습관에 따라 필요한 수업 방식은 다릅니다. 영어드림의 수업 구조와 시작 방법을 상황별로 정리했습니다.</p>
+            </div>
+            <div class="seo-topic-grid">
+                <a class="seo-topic-card fade-in" href="adult-online-english.html">
+                    <span>01 · ADULT</span>
+                    <h3>성인 온라인 영어회화</h3>
+                    <p>직장인과 성인 학습자가 1:1 영어회화를 고를 때 확인해야 할 기준과 학습 흐름을 안내합니다.</p>
+                    <strong>성인 영어회화 가이드 보기 →</strong>
+                </a>
+                <a class="seo-topic-card fade-in" href="beginner-english-conversation.html">
+                    <span>02 · BEGINNER</span>
+                    <h3>왕초보 영어회화</h3>
+                    <p>영어가 어렵고 말문이 막히는 성인이 짧은 반응부터 실제 대화까지 시작하는 순서를 안내합니다.</p>
+                    <strong>왕초보 시작 방법 보기 →</strong>
+                </a>
+                <a class="seo-topic-card fade-in" href="managed-english-conversation.html">
+                    <span>03 · MANAGED</span>
+                    <h3>관리형 영어회화</h3>
+                    <p>원어민 수업과 담당 선생님의 모니터링·복습·데일리 과제가 어떻게 연결되는지 안내합니다.</p>
+                    <strong>관리형 학습 방식 보기 →</strong>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Dual Teacher Learning System -->
+    <section id="dual-teacher-system" class="section dual-teacher-section">
+        <div class="container">
+            <div class="dual-system-header fade-in">
+                <span class="dual-system-kicker">ENGLISH DREAM 1:2 PT SYSTEM</span>
+                <h2>한 명의 수강생을 위한<br>1:2 밀착 PT 시스템</h2>
+                <p>원어민 선생님이 수업에서 영어를 말하게 만들고, 담당 관리 선생님이 수업 밖의 학습까지 이어갑니다.</p>
+            </div>
+
+            <div class="dual-system-stage fade-in" aria-label="수강생 한 명을 원어민 선생님과 담당 관리 선생님이 함께 관리하는 1대2 밀착 학습 PT 시스템">
+                <article class="dual-role-card dual-role-native">
+                    <div class="dual-role-heading">
+                        <span class="dual-role-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M5 5.5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-6l-4.5 3v-3H5a2 2 0 0 1-2-2v-8a2 2 0 0 1 2-2Z"></path><path d="M8 10h8M8 13h5"></path></svg>
+                        </span>
+                        <span class="dual-role-badge">SPEAKING PT</span>
+                    </div>
+                    <h3>원어민 선생님</h3>
+                    <p>수업 시간에는 실제 대화를 중심으로 영어를 직접 말하고 바로 교정받습니다.</p>
+                    <ul>
+                        <li>실시간 1:1 맞춤 회화</li>
+                        <li>수준과 목표에 맞춘 수업 진행</li>
+                        <li>학생 반응에 맞춘 즉각적인 피드백</li>
+                    </ul>
+                </article>
+
+                <div class="dual-learner-core">
+                    <span>STUDENT</span>
+                    <div class="dual-learner-icon" aria-hidden="true">
+                        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"></circle><path d="M4.5 21a7.5 7.5 0 0 1 15 0"></path></svg>
+                    </div>
+                    <strong>수강생 1명</strong>
+                    <p>두 선생님이 하나의 목표로 실력 변화를 함께 만듭니다.</p>
+                </div>
+
+                <img class="dual-system-mascot" src="images/dual-system-mascot.png" alt="양손으로 원어민 선생님과 담당 관리 선생님의 1대2 밀착 PT를 안내하는 영어드림 캐릭터" width="1628" height="966" loading="lazy" decoding="async">
+
+                <article class="dual-role-card dual-role-manager">
+                    <div class="dual-role-heading">
+                        <span class="dual-role-icon" aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M8 4h8M9 3v3h6V3M6 5h12a2 2 0 0 1 2 2v13H4V7a2 2 0 0 1 2-2Z"></path><path d="m8 12 2 2 5-5M8 17h8"></path></svg>
+                        </span>
+                        <span class="dual-role-badge">DAILY PT</span>
+                    </div>
+                    <h3>담당 관리 선생님</h3>
+                    <p>수업 내용을 확인하고 부족한 부분이 다음 학습으로 이어지도록 관리합니다.</p>
+                    <ul>
+                        <li>수업 모니터링과 부족한 영역 분석</li>
+                        <li>맞춤 학습 계획과 데일리 과제 제공</li>
+                        <li>수업 밖 영어 노출과 학습 지속 관리</li>
+                    </ul>
+                </article>
+            </div>
+
+            <div class="dual-system-equation fade-in" aria-label="원어민 일대일 수업 더하기 담당 선생님 데일리 관리">
+                <span>원어민 1:1 스피킹 PT</span><b aria-hidden="true">+</b><span>담당 선생님 데일리 PT</span><b aria-hidden="true">=</b><strong>영어드림 1:2 밀착 PT</strong>
+            </div>
+            <p class="dual-system-note fade-in"><strong>1:2 그룹수업이 아닙니다.</strong> 수강생 1명을 원어민 선생님과 담당 관리 선생님, 총 2명의 선생님이 각자의 역할로 밀착 관리하는 학습 PT 시스템입니다.</p>
+            <div class="dual-system-actions fade-in">
+                <a href="#reservation" class="btn btn-primary" data-cta-location="dual_teacher_system">1:2 밀착 PT 무료 진단받기</a>
+            </div>
+        </div>
+    </section>
+
     <!-- Cost Comparison Section -->
     <section id="cost-efficiency" class="section" style="background: linear-gradient(180deg, #fafbfd 0%, #ffffff 100%); padding: 100px 0; border-top: 1px solid #f0f3f6; border-bottom: 1px solid #f0f3f6;">
         <div class="container">
             <div class="section-header text-center fade-in" style="margin-bottom: 60px; text-align: center;">
                 <span class="badge" style="background: var(--secondary); color: white; padding: 6px 18px; border-radius: 20px; font-size: 0.95rem; font-weight: 800; margin-bottom: 20px; display: inline-block; letter-spacing: 0.5px;">COST EFFICIENCY</span>
                 <h2 style="font-size: 3.2rem; font-weight: 900; color: #111; letter-spacing: -1.5px; line-height: 1.25; margin-bottom: 20px;">영어회화 실력,<br>꼭 어학연수를 가야만 늘까요?</h2>
-                <p style="font-size: 1.3rem; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.7;">해외 어학연수의 압도적인 노출 효과는 그대로 가져오고,<br>막대한 비용 부담은 획기적으로 낮췄습니다.</p>
+                <p style="font-size: 1.3rem; color: #666; max-width: 700px; margin: 0 auto; line-height: 1.7;">해외 어학연수의 압도적인 노출 효과는 그대로 가져오고,<br class="desktop-copy-break"> 막대한 비용 부담은 획기적으로 낮췄습니다.</p>
             </div>
             
             <div class="comparison-grid fade-in">
@@ -390,6 +541,8 @@
                 <!-- Right: English Dream -->
                 <div class="comparison-card english-dream-card">
                     <div class="badge-recommend">BEST VALUE</div>
+                    <img class="section-mascot cost-guide-mascot" src="images/mascot-card-guide.png" alt="" width="478" height="720" loading="lazy" decoding="async">
+                    <img class="section-mascot cost-guide-mobile-mascot" src="images/mascot-card-mobile-guide.png" alt="" width="595" height="600" loading="lazy" decoding="async">
                     <div class="card-header">
                         <h3>영어드림 어학연수 코스</h3>
                         <p style="margin-top: 5px; color: var(--secondary); font-weight: 700;">원어민 1:1 맞춤 수업 + 일일 PT 시스템</p>
@@ -417,6 +570,7 @@
                     <span class="badge">STUDENT REVIEW</span>
                     <h2>수강생이 직접 들려주는<br>영어드림 후기</h2>
                     <p>실제 수강 경험과 변화를 영상으로 확인해 보세요.</p>
+                    <img class="section-mascot testimonial-celebrate-mascot" src="images/mascot-celebrate.png" alt="" width="595" height="640" loading="lazy" decoding="async">
                 </div>
                 <div class="testimonial-video-wrap fade-in">
                     <iframe
@@ -430,13 +584,14 @@
             </div>
 
             <!-- Student Testimonial Cards -->
+            <p class="mobile-section-guide mobile-review-guide" aria-hidden="true">수강 후기는 좌우로 넘겨볼 수 있어요.</p>
             <div class="testimonial-cards-grid fade-in" style="margin-top: 60px;">
                 <!-- Card 1: Working Holiday -->
                 <div class="testimonial-card wh-prep">
                     <span class="card-tag">워킹홀리데이 준비</span>
                     <div class="review-stars">★★★★★</div>
                     <h3>"영어드림 덕분에 현지 카페 취업에 성공했어요!"</h3>
-                    <p>출국 3개월 전부터 1:1 맞춤 PT로 매일 실전 회화를 대비했습니다. 주문 받기, 컴플레인 대처 등 실전 롤플레이 수업이 큰 도움이 되었어요. 현지 도착하자마자 면접을 봐서 멜버른 시내 카페 바리스타로 당당히 합격했습니다! 예전에는 머릿속으로만 맴돌던 영어가 이제는 자연스럽게 대화로 나옵니다.</p>
+                    <p>출국 3개월 전부터 1:1 맞춤 PT로 매일 실전 회화를 대비했습니다. 주문 받기, 컴플레인 대처 등 실전 롤플레이 수업이 큰 도움이 되었어요. 현지 도착하자마자 면접을 봐서 <strong>멜버른 시내 카페 바리스타로 당당히 합격했습니다!</strong> 예전에는 머릿속으로만 맴돌던 영어가 이제는 자연스럽게 대화로 나옵니다.</p>
                     <div class="student-info">
                         <div class="student-avatar">🐨</div>
                         <div class="student-meta">
@@ -451,7 +606,7 @@
                     <span class="card-tag">영어 왕초보</span>
                     <div class="review-stars">★★★★★</div>
                     <h3>"알파벳만 알던 왕초보에서 이제는 영어 대화가 무섭지 않아요!"</h3>
-                    <p>처음에는 외국인 선생님 얼굴만 봐도 심장이 터질 것 같았어요. 하지만 제 수준에 맞춘 친절한 설명과 담당 관리 선생님의 매일 피드백 덕분에 꾸준히 할 수 있었습니다. 6개월이 지난 지금은 주어, 동사조차 헷갈리던 제가 스스로 문장을 만들어 외국인과 10분 이상 스몰토크를 나눕니다.</p>
+                    <p>처음에는 외국인 선생님 얼굴만 봐도 심장이 터질 것 같았어요. 하지만 제 수준에 맞춘 친절한 설명과 담당 관리 선생님의 매일 피드백 덕분에 꾸준히 할 수 있었습니다. 6개월이 지난 지금은 주어, 동사조차 헷갈리던 제가 스스로 문장을 만들어 <strong>외국인과 10분 이상 스몰토크를 나눕니다.</strong></p>
                     <div class="student-info">
                         <div class="student-avatar">🌱</div>
                         <div class="student-meta">
@@ -466,7 +621,7 @@
                     <span class="card-tag">여행 영어</span>
                     <div class="review-stars">★★★★★</div>
                     <h3>"가이드 없이 해외 자유여행을 다녀올 수 있게 되었습니다!"</h3>
-                    <p>해외에 나갈 때마다 번역기 앱만 붙잡고 있었는데, 영어드림 여행영어 과정을 수강하면서 자신감을 얻었습니다. 공항, 호텔, 레스토랑 등 필수적인 상황별 표현을 집중 훈련한 덕분에 이번 유럽 여행은 번역기 없이 현지인들과 직접 소통하며 자유롭게 다녀왔어요! 맛집 추천도 직접 물어봤답니다.</p>
+                    <p>해외에 나갈 때마다 번역기 앱만 붙잡고 있었는데, 영어드림 여행영어 과정을 수강하면서 자신감을 얻었습니다. 공항, 호텔, 레스토랑 등 필수적인 상황별 표현을 집중 훈련한 덕분에 이번 유럽 여행은 <strong>번역기 없이 현지인들과 직접 소통하며 자유롭게 다녀왔어요!</strong> 맛집 추천도 직접 물어봤답니다.</p>
                     <div class="student-info">
                         <div class="student-avatar">✈️</div>
                         <div class="student-meta">
@@ -481,7 +636,7 @@
                     <span class="card-tag">비즈니스</span>
                     <div class="review-stars">★★★★★</div>
                     <h3>"외국계 화상 미팅과 영어 메일 작성이 훨씬 편해졌습니다!"</h3>
-                    <p>업무상 급격히 늘어난 영어 미팅 때문에 영어드림 비즈니스 과정을 수강했습니다. 격식 있는 표현과 영어 발표, 협상 팁을 1:1로 밀도 있게 학습한 결과, 매번 긴장되던 해외 파트너사와의 컨퍼런스 콜에서 주도적으로 제 의견을 조율할 수 있게 되었습니다. 메일 쓰는 시간도 절반으로 단축되었어요.</p>
+                    <p>업무상 급격히 늘어난 영어 미팅 때문에 영어드림 비즈니스 과정을 수강했습니다. 격식 있는 표현과 영어 발표, 협상 팁을 1:1로 밀도 있게 학습한 결과, 매번 긴장되던 해외 파트너사와의 컨퍼런스 콜에서 주도적으로 제 의견을 조율할 수 있게 되었습니다. <strong>메일 쓰는 시간도 절반으로 단축되었어요.</strong></p>
                     <div class="student-info">
                         <div class="student-avatar">💼</div>
                         <div class="student-meta">
@@ -494,64 +649,6 @@
         </div>
     </section>
 
-    <!-- Curriculum Tower Section -->
-    <section id="curriculum" class="section">
-        <div class="container">
-            <div class="curriculum-layout">
-                <div class="curriculum-copy-col">
-                    <div class="curriculum-header fade-in">
-                        <h2 style="color: #4A148C; font-size: 3.5rem; font-weight: 800; line-height: 1.3; margin-bottom: 25px; letter-spacing: -1.5px;">영어 실력,<br>층층이 성장하는<br>드림 타워 커리큘럼</h2>
-                        <p style="font-size: 1.25rem; line-height: 1.8;">한 단계씩 올라가며, 말하기 실력이 눈에 보이게 성장합니다.<br><strong style="font-size: 1.35rem; color: #333;">초보자부터 고급 스피킹까지</strong><br>당신의 현재 수준에서 출발해 최종 목표까지 함께 올라갑니다.</p>
-                    </div>
-                    <div class="curriculum-tower">
-                    <!-- 1F -->
-                    <div class="tower-floor fade-in">
-                        <div class="floor-marker" style="background-color: #9C27B0;"></div>
-                        <div class="floor-content">
-                            <h3><span>1F</span> — Foundation Zone</h3>
-                            <p>지식·기초회화·패턴 학습을 통해<br>영어 문장을 '만들어 말하는 힘'을 기르는 단계입니다.<br>영어가 두렵지 않고, 입이 열리기 시작합니다.</p>
-                        </div>
-                    </div>
-                    <!-- 2F -->
-                    <div class="tower-floor fade-in" style="transition-delay: 0.1s;">
-                        <div class="floor-marker" style="background-color: #1976D2;"></div>
-                        <div class="floor-content">
-                            <h3><span>2F</span> — Daily Speaking Zone</h3>
-                            <p>실생활 표현·스몰토크·실전대화를 통해<br>일상에서 자연스럽게 말하는 감각을 만듭니다.<br>"이해하는 영어 → 말하는 영어"로 전환되는 구간입니다.</p>
-                        </div>
-                    </div>
-                    <!-- 3F -->
-                <div class="tower-floor fade-in" style="transition-delay: 0.2s;">
-                    <div class="floor-marker" style="background-color: #FFEB3B;"></div>
-                    <div class="floor-content">
-                        <h3><span>3F</span> — Skill Upgrade Zone</h3>
-                        <p>표현 확장과 상황별 대화를 연습하며<br>자신의 말에 개성·길이·표현력이 더해집니다.<br>프레임이 넓어지며 '대화가 이어지는 영어'를 완성합니다.</p>
-                    </div>
-                </div>
-                <!-- 4F -->
-                <div class="tower-floor fade-in" style="transition-delay: 0.3s;">
-                    <div class="floor-marker" style="background-color: #FF9800;"></div>
-                    <div class="floor-content">
-                        <h3><span>4F</span> — Test & Performance Zone</h3>
-                        <p><strong>TOEIC Speaking</strong> / <strong>OPIc</strong> / 면접 / 스피치 등<br>결과로 증명되는 스피킹 실력을 만드는 단계입니다.<br>점수와 실력을 동시에 잡는 전략적 훈련이 진행됩니다.</p>
-                    </div>
-                </div>
-                <!-- 5F -->
-                <div class="tower-floor fade-in" style="transition-delay: 0.4s;">
-                    <div class="floor-marker" style="background-color: #D32F2F;"></div>
-                    <div class="floor-content">
-                        <h3><span>5F</span> — Mastery & Pro Track</h3>
-                        <p>비즈니스 커뮤니케이션·프리토킹·고급 응대 표현 등<br>실무와 현장에서 바로 쓰는 영어를 연습합니다.<br>이 단계의 목표는 점수가 아니라, 영어로 일하는 사람입니다.</p>
-                    </div>
-                </div>
-                    </div>
-                </div>
-                <div class="curriculum-image-col fade-in">
-                    <img src="images/curriculum_tower_otter.png" alt="수달 마스코트와 함께 올라가는 드림 타워 커리큘럼" class="curriculum-tower-img">
-                </div>
-            </div>
-        </div>
-    </section>
 
     <!-- Reservation Section -->
     <section id="reservation" class="section">
@@ -564,111 +661,110 @@
                         <li><span>✓</span>원어민 10분 레벨테스트 제공</li>
                         <li><span>✓</span>교육 전문 컨설턴트 1:1 학습 컨설팅</li>
                     </ul>
+                    <img class="section-mascot reservation-cta-mascot" src="images/mascot-cta.png" alt="" width="580" height="640" loading="lazy" decoding="async">
                 </div>
-                <div class="reservation-form">
-                    <p class="form-notice">아래 설문지를 작성해 주시면 24시간 이내에 영어드림에서 연락드립니다.</p>
-                    <form id="contactForm" class="survey-form">
-                        <!-- 1. 이름 -->
-                        <div class="form-group">
-                            <label for="name">1. 이름 <span class="required">*</span></label>
-                            <input type="text" id="name" name="name" autocomplete="name" required>
+                <div class="reservation-form" id="consultation-form-panel">
+                    <form id="contactForm" class="survey-form conversion-form" data-current-step="1">
+                        <div class="form-progress" aria-label="상담 신청 단계">
+                            <span class="is-active" data-progress-step="1"><b>1</b> 기본 정보</span>
+                            <i aria-hidden="true"></i>
+                            <span data-progress-step="2"><b>2</b> 선택 정보</span>
+                            <i aria-hidden="true"></i>
+                            <span data-progress-step="3"><b>3</b> 신청 완료</span>
                         </div>
-                        
-                        <!-- 2. 연락처 -->
-                        <div class="form-group">
-                            <label for="phone1">2. 연락처 <span class="required">*</span></label>
-                            <div class="phone-inputs">
-                                <input type="tel" id="phone1" name="phone1" inputmode="numeric" autocomplete="tel-area-code" maxlength="3" pattern="[0-9]{2,3}" aria-label="연락처 앞자리" required>
-                                <span>-</span>
-                                <input type="tel" id="phone2" name="phone2" inputmode="numeric" autocomplete="tel-local-prefix" maxlength="4" pattern="[0-9]{3,4}" aria-label="연락처 중간자리" required>
-                                <span>-</span>
-                                <input type="tel" id="phone3" name="phone3" inputmode="numeric" autocomplete="tel-local-suffix" maxlength="4" pattern="[0-9]{4}" aria-label="연락처 뒷자리" required>
+
+                        <section class="form-step is-active" data-form-step="1" aria-labelledby="form-step-one-title">
+                            <div class="form-step-heading">
+                                <span>1단계</span>
+                                <h3 id="form-step-one-title" tabindex="-1">상담에 필요한 기본 정보</h3>
+                                <p>이름, 연락처, 연락 가능 시간만 알려주세요.</p>
                             </div>
-                        </div>
 
-                        <!-- 3. 성별 -->
-                        <div class="form-group">
-                            <fieldset>
-                                <legend>3. 성별 <span class="required">*</span></legend>
-                            <div class="radio-group">
-                                <label><input type="radio" name="gender" value="male" required> 남성</label>
-                                <label><input type="radio" name="gender" value="female" required> 여성</label>
+                            <div class="form-group">
+                                <label for="name">이름 <span class="required">*</span></label>
+                                <input type="text" id="name" name="name" autocomplete="name" placeholder="성함을 입력해 주세요" required>
                             </div>
-                            </fieldset>
-                        </div>
 
-                        <!-- 4. 실력 -->
-                        <div class="form-group">
-                            <fieldset>
-                                <legend>4. 나의 영어회화 실력은? <span class="required">*</span></legend>
-                            <div class="radio-group vertical">
-                                <label><input type="radio" name="level" value="level1" required> 문장보다는 단어로 나열하는 수준이에요!</label>
-                                <label><input type="radio" name="level" value="level2" required> 외국인과 Small talk이 가능해요!</label>
-                                <label><input type="radio" name="level" value="level3" required> 외국인과 일상 대화는 문제 없어요!</label>
-                                <label><input type="radio" name="level" value="level4" required> 비즈니스 토론이 가능해요!</label>
+                            <div class="form-group">
+                                <label for="phone1">연락처 <span class="required">*</span></label>
+                                <div class="phone-inputs">
+                                    <input type="tel" id="phone1" name="phone1" inputmode="numeric" autocomplete="tel-area-code" maxlength="3" pattern="[0-9]{2,3}" aria-label="연락처 앞자리" placeholder="010" required>
+                                    <span>-</span>
+                                    <input type="tel" id="phone2" name="phone2" inputmode="numeric" autocomplete="tel-local-prefix" maxlength="4" pattern="[0-9]{3,4}" aria-label="연락처 중간자리" placeholder="0000" required>
+                                    <span>-</span>
+                                    <input type="tel" id="phone3" name="phone3" inputmode="numeric" autocomplete="tel-local-suffix" maxlength="4" pattern="[0-9]{4}" aria-label="연락처 뒷자리" placeholder="0000" required>
+                                </div>
                             </div>
-                            </fieldset>
-                        </div>
 
-                        <!-- 5. 경험 -->
-                        <div class="form-group">
-                            <fieldset data-required-group="experience">
-                                <legend>5. 영어회화 경험은 있으신가요? <span class="required">*</span></legend>
-                            <div class="checkbox-group vertical">
-                                <label><input type="checkbox" name="experience" value="어학연수"> 어학연수</label>
-                                <label><input type="checkbox" name="experience" value="과외"> 과외</label>
-                                <label><input type="checkbox" name="experience" value="학원"> 학원</label>
-                                <label><input type="checkbox" name="experience" value="앱"> 앱(스픽&말해보카 등)</label>
-                                <label><input type="checkbox" name="experience" value="회화스터디"> 회화스터디</label>
-                                <label class="with-text"><input type="checkbox" name="experience" value="기타"> 기타: <input type="text" class="inline-input"></label>
+                            <div class="form-group">
+                                <fieldset>
+                                    <legend>연락 가능한 시간 <span class="required">*</span></legend>
+                                    <div class="radio-group contact-time-grid">
+                                        <label><input type="radio" name="contact_time" value="오전" required><span>오전<small>09:00~12:00</small></span></label>
+                                        <label><input type="radio" name="contact_time" value="오후" required><span>오후<small>12:00~18:00</small></span></label>
+                                        <label><input type="radio" name="contact_time" value="저녁" required><span>저녁<small>18:00~23:00</small></span></label>
+                                    </div>
+                                </fieldset>
                             </div>
-                            </fieldset>
-                        </div>
 
-                        <!-- 6. 목적 -->
-                        <div class="form-group">
-                            <fieldset data-required-group="reason">
-                                <legend>6. 영어공부를 배우려는 이유는 어떻게 되시나요? <span class="required">*</span></legend>
-                            <div class="checkbox-group vertical">
-                                <label><input type="checkbox" name="reason" value="해외생활"> 해외생활(유학, 워홀, 어학연수)</label>
-                                <label><input type="checkbox" name="reason" value="취업_비즈니스"> 취업 & 비즈니스</label>
-                                <label><input type="checkbox" name="reason" value="여행_자기개발"> 여행 & 자기개발</label>
-                                <label><input type="checkbox" name="reason" value="영어시험"> 영어시험 대비</label>
-                                <label class="with-text"><input type="checkbox" name="reason" value="기타"> 기타: <input type="text" class="inline-input"></label>
+                            <div class="form-group privacy-compact">
+                                <details class="privacy-details">
+                                    <summary>개인정보 수집 및 이용 내용 보기</summary>
+                                    <div>수집 항목: 이름, 연락처, 연락 가능 시간 및 선택 입력 정보<br>이용 목적: 상담 신청 확인, 무료 상담 및 레벨테스트 안내<br>보유 기간: 목적 달성 후 1년 보관 뒤 파기</div>
+                                </details>
+                                <label class="terms-agree"><input type="checkbox" name="privacy_agree" required> 개인정보 수집 및 이용에 동의합니다.</label>
                             </div>
-                            </fieldset>
-                        </div>
 
-                        <!-- 7. 시간 -->
-                        <div class="form-group">
-                            <fieldset data-required-group="contact_time">
-                                <legend>7. 연락 가능한 시간 <span class="required">*</span></legend>
-                            <div class="checkbox-group vertical">
-                                <label><input type="checkbox" name="contact_time" value="오전"> 오전(09:00 ~ 12:00)</label>
-                                <label><input type="checkbox" name="contact_time" value="오후"> 오후(12:00 ~ 18:00)</label>
-                                <label><input type="checkbox" name="contact_time" value="저녁"> 저녁(18:00 ~ 23:00)</label>
+                            <button type="button" class="btn form-next-btn full-width">다음: 선택 정보 <span aria-hidden="true">→</span></button>
+                            <p class="form-step-reassurance">추가 정보는 선택사항이며 건너뛸 수 있습니다.</p>
+                        </section>
+
+                        <section class="form-step" data-form-step="2" aria-labelledby="form-step-two-title" hidden>
+                            <div class="form-step-heading">
+                                <span>2단계 · 선택사항</span>
+                                <h3 id="form-step-two-title" tabindex="-1">더 정확한 상담을 위한 정보</h3>
+                                <p>모두 선택사항입니다. 바로 신청을 완료해도 됩니다.</p>
                             </div>
-                            </fieldset>
-                        </div>
 
-                        <!-- 8. 개인정보 -->
-                        <div class="form-group">
-                            <label for="privacy-terms">개인정보 수집 및 이용 동의 <span class="required">*</span></label>
-                            <textarea id="privacy-terms" readonly class="terms-box" rows="7">1. 수집 항목
-이름, 연락처, 성별, 영어회화 실력, 학습 경험, 학습 목적, 연락 가능 시간
+                            <div class="form-group">
+                                <fieldset>
+                                    <legend>현재 영어회화 실력</legend>
+                                    <div class="radio-group vertical">
+                                        <label><input type="radio" name="level" value="level1"> 단어 위주로 말하는 왕초보</label>
+                                        <label><input type="radio" name="level" value="level2"> 간단한 스몰토크 가능</label>
+                                        <label><input type="radio" name="level" value="level3"> 일상 대화 가능</label>
+                                        <label><input type="radio" name="level" value="level4"> 비즈니스 토론 가능</label>
+                                    </div>
+                                </fieldset>
+                            </div>
 
-2. 수집 및 이용 목적
-상담 신청자 확인, 무료 상담 및 레벨테스트 안내, 학습 목적에 따른 맞춤 상담 제공
+                            <div class="form-group">
+                                <fieldset>
+                                    <legend>학습 목적 <small>(복수 선택 가능)</small></legend>
+                                    <div class="checkbox-group vertical">
+                                        <label><input type="checkbox" name="reason" value="왕초보_일상회화"> 왕초보 & 일상회화</label>
+                                        <label><input type="checkbox" name="reason" value="해외생활"> 해외생활·유학·워킹홀리데이</label>
+                                        <label><input type="checkbox" name="reason" value="취업_비즈니스"> 취업 & 비즈니스</label>
+                                        <label><input type="checkbox" name="reason" value="여행_자기개발"> 여행 & 자기개발</label>
+                                        <label><input type="checkbox" name="reason" value="영어시험"> 영어시험 대비</label>
+                                    </div>
+                                </fieldset>
+                            </div>
 
-3. 보유 및 이용 기간
-상담 및 문의 처리 목적 달성 후 1년간 보관한 뒤 지체 없이 파기합니다. 단, 관련 법령에 따라 보관이 필요한 경우 해당 기간 동안 보관할 수 있습니다.
+                            <div class="form-step-actions">
+                                <button type="button" class="btn form-back-btn">이전</button>
+                                <button type="submit" class="btn submit-btn">이대로 상담 신청하기</button>
+                            </div>
+                            <p class="form-step-reassurance">상담 후 결제 의무가 없으며, 선택한 시간대에 연락드립니다.</p>
+                        </section>
 
-4. 동의 거부 권리
-개인정보 수집 및 이용에 동의하지 않을 수 있으나, 이 경우 상담 예약 접수가 제한될 수 있습니다.</textarea>
-                            <label class="terms-agree"><input type="checkbox" name="privacy_agree" required> 개인정보 수집 및 이용에 동의합니다.</label>
-                        </div>
-
-                        <button type="submit" class="btn submit-btn full-width">제출하기</button>
+                        <section class="form-step form-success-step" data-form-step="3" aria-labelledby="form-step-three-title" aria-live="polite" hidden>
+                            <img src="images/mascot-celebrate.png" alt="상담 신청 완료를 축하하는 영어드림 캐릭터" width="595" height="640" loading="lazy" decoding="async">
+                            <span class="success-badge">신청 완료</span>
+                            <h3 id="form-step-three-title" tabindex="-1">상담 신청이 완료되었습니다!</h3>
+                            <p><strong data-success-name>신청자님</strong>, 남겨주신 내용을 확인한 뒤<br><b>24시간 이내에 선택하신 시간대로 연락드리겠습니다.</b></p>
+                            <button type="button" class="btn form-restart-btn">상담 다시 신청하기</button>
+                        </section>
                     </form>
                 </div>
             </div>
@@ -681,6 +777,27 @@
             <div class="footer-content">
                 <div class="footer-logo">English Dream</div>
                 <p>온라인 전문 영어회화의 새로운 기준을 제시합니다.</p>
+            </div>
+            <div class="footer-social" aria-label="영어드림 공식 채널">
+                <strong class="footer-social-title">영어드림 공식 채널</strong>
+                <div class="footer-social-links">
+                    <a class="footer-social-link footer-social-blog" href="https://blog.naver.com/english_dream" target="_blank" rel="noopener noreferrer" aria-label="영어드림 네이버 공식 블로그 새 탭에서 열기">
+                        <i aria-hidden="true">B</i><span>공식 블로그</span>
+                    </a>
+                    <a class="footer-social-link footer-social-threads" href="https://www.threads.com/@englishdream_official" target="_blank" rel="noopener noreferrer" aria-label="영어드림 Threads 공식 계정 새 탭에서 열기">
+                        <i aria-hidden="true">@</i><span>Threads</span>
+                    </a>
+                    <a class="footer-social-link footer-social-instagram" href="https://www.instagram.com/englishdream_official?igsh=c3hld2xnd2M0dDNy" target="_blank" rel="noopener noreferrer" aria-label="영어드림 Instagram 공식 계정 새 탭에서 열기">
+                        <i aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"></rect><circle cx="12" cy="12" r="4"></circle><circle cx="17.5" cy="6.7" r="1"></circle></svg>
+                        </i><span>Instagram</span>
+                    </a>
+                    <a class="footer-social-link footer-social-youtube" href="https://youtube.com/channel/UCc92ZgOca9TCsy28BcmZtQw?si=5we4r_8DPYGsXP7T" target="_blank" rel="noopener noreferrer" aria-label="영어드림 YouTube 공식 채널 새 탭에서 열기">
+                        <i aria-hidden="true">
+                            <svg viewBox="0 0 24 24"><path d="M21 12c0 3.4-.4 5.6-1.2 6.4-.8.8-3.4 1.1-7.8 1.1s-7-.3-7.8-1.1C3.4 17.6 3 15.4 3 12s.4-5.6 1.2-6.4C5 4.8 7.6 4.5 12 4.5s7 .3 7.8 1.1C20.6 6.4 21 8.6 21 12Z"></path><path class="play" d="m10 9 5 3-5 3Z"></path></svg>
+                        </i><span>YouTube</span>
+                    </a>
+                </div>
             </div>
             <div class="footer-bottom">
                 <p>&copy; 2026 English Dream. All rights reserved.</p>
@@ -697,6 +814,10 @@
         <span>카톡 1:1 상담</span>
     </a>
 
-    <script src="script.js?v=20260606-design-merge"></script>
+    <script type="text/javascript" src="https://wcs.naver.net/wcslog.js"></script>
+    <script src="naver-tracking.js?v=20260713-attribution-v2"></script>
+    <script src="sticky-banner.js?v=20260717-contextual-v3"></script>
+    <script src="script.js?v=20260717-feature-readability-v1"></script>
+    <script src="landing-analytics.js?v=20260717-dual-system-v1"></script>
 </body>
 </html>

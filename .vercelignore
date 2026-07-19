@@ -1,5 +1,12 @@
 marketing-dashboard.html
+dashboard.webmanifest
+dashboard-sw.js
 dashboard-app/
+_dashboard-pwa-deploy/
+apps-script-live/
+android-build/
+search-console-script/
+.vs/
 EnglishDreamPage-main/
 node_modules/
 dist/
@@ -8,3 +15,4 @@ APPS_SCRIPT_*.js
 APPS_SCRIPT_*.json
 GOOGLE_SHEETS_SETUP.md
 VERCEL_META_SETUP.md
+api/naver-search-ads.js

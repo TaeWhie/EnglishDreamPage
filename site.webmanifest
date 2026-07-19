@@ -1,0 +1,19 @@
+{
+  "name": "English Dream",
+  "short_name": "English Dream",
+  "icons": [
+    {
+      "src": "/favicon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/favicon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#d9a7ee",
+  "background_color": "#d9a7ee",
+  "display": "standalone"
+}
